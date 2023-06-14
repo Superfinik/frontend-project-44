@@ -13,7 +13,7 @@ const brainEven = () => {
 
   let i = 1;
   while (i <= 3) {
-    const randomNumber = getRandomNumber(1, 10);
+    const randomNumber = getRandomNumber(1, 100);
     console.log(`Question: ${randomNumber}`);
 
     const isEven = () => {
