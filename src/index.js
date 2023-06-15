@@ -15,6 +15,17 @@ function NOD(x, y) {
   return NOD(y, x % y);
 }
 
+function getProgressionBar(a, d) {
+  const result = [a];
+  let firstDigit = a;
+  let n = 1;
+  while (n <= 10) {
+    result.push(firstDigit += d);
+    n += 1;
+  }
+  return result.join(' ');
+}
+
 export {
-  greeting, getRandomNumber, NOD,
+  greeting, getRandomNumber, NOD, getProgressionBar,
 };
