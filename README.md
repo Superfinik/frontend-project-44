@@ -3,6 +3,12 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/6572e08f07040547b24c/maintainability)](https://codeclimate.com/github/Superfinik/frontend-project-44/maintainability)
 # "Brain Games" - "Игры Разума"
 
+### Minimum system requirements
+Node.js v18.16.0
+
+### Setup
+make **npm install brain-games**
+
 ## Игра "Проверка на чётность". 
 Суть игры в следующем: игроку показывается случайное число. И ему нужно ответить yes, если число чётное, или no — если нечётное. Для победы игрок должен дать правильный ответ на три вопроса подряд. Любой некорректный ввод также считается ошибкой и равносилен неправильному ответу. Пример игры на видео ниже. Для запуска игры введите в командной строке: brain-even и нажмите Enter.
 
