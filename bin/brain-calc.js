@@ -4,7 +4,7 @@ import stringMath from 'string-math';
 
 import {
   getRandomNumber,
-} from '../src/index.js';
+} from '../src/utils.js';
 
 console.log('Welcome to the Brain Games!');
 

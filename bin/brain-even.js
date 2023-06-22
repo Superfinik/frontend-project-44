@@ -1,16 +1,16 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
+import {
+  getRandomNumber,
+} from '../src/utils.js';
+
 console.log('Welcome to the Brain Games!');
 
 const userName = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${userName}!\nAnswer "yes" if the number is even, otherwise answer "no".`);
 
 const brainEven = () => {
-  function getRandomNumber(min, max) {
-    return Math.round(min - 0.5 + Math.random() * (max - min + 1));
-  }
-
   let i = 1;
   while (i <= 3) {
     const randomNumber = getRandomNumber(1, 100);

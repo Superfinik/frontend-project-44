@@ -3,7 +3,7 @@ import readlineSync from 'readline-sync';
 
 import {
   getRandomNumber, NOD,
-} from '../src/index.js';
+} from '../src/utils.js';
 
 console.log('Welcome to the Brain Games!');
 
