@@ -2,12 +2,6 @@ function getRandomNumber(min, max) {
   return Math.round(min - 0.5 + Math.random() * (max - min + 1));
 }
 
-function NOD(x, y) {
-  if (y > x) return NOD(y, x);
-  if (!y) return x;
-  return NOD(y, x % y);
-}
-
 function getProgressionBar(a, d) {
   const result = [a];
   let firstDigit = a;
@@ -20,5 +14,5 @@ function getProgressionBar(a, d) {
 }
 
 export {
-  getRandomNumber, NOD, getProgressionBar,
+  getRandomNumber, getProgressionBar,
 };
