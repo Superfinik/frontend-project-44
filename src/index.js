@@ -1,23 +1,18 @@
 import readlineSync from 'readline-sync';
 
+const countRounds = 3;
+
 export default (description, getQuestionAndAnswer) => {
-  // приветствуем игрока и записываем имя
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
-  // выводим описание игры
   console.log(description);
 
-  // запускаем цикл раундов
-  const countRounds = 3;
   for (let i = 0; i < countRounds; i += 1) {
-    // принимаем деструктуризацию вопроса и правильного ответа
     const [question, correctAnswer] = getQuestionAndAnswer();
     console.log(`Question: ${question}`);
-    // записываем ответ пользователя
     const userAnswer = readlineSync.question('You answer: ');
-    // проверяем совпадает ли ответ юзера и правильный ответ
     if (correctAnswer === userAnswer) {
       console.log('Correct!');
     } else {

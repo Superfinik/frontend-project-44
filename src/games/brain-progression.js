@@ -1,5 +1,16 @@
 import runGame from '../index.js';
-import { getRandomNumber, getProgressionBar } from '../utils.js';
+import getRandomNumber from '../utils.js';
+
+function getProgressionBar(a, d) {
+  const result = [a];
+  let firstDigit = a;
+  let n = 1;
+  while (n <= 10) {
+    result.push(firstDigit += d);
+    n += 1;
+  }
+  return result.join(' ');
+}
 
 const description = 'What number is missing in the progression?';
 

@@ -1,5 +1,5 @@
 import runGame from '../index.js';
-import { getRandomNumber } from '../utils.js';
+import getRandomNumber from '../utils.js';
 
 const description = 'What is the result of the expression?';
 
@@ -23,7 +23,7 @@ const getQuestionAndAnswer = () => {
   const operand1 = getRandomNumber(0, 20);
   const operand2 = getRandomNumber(0, 20);
   const question = `${operand1} ${operator} ${operand2}`;
-  const correctAnswer = calculateExpression(operand1, operand2, operator);
+  const correctAnswer = String(calculateExpression(operand1, operand2, operator));
 
   return [question, correctAnswer];
 };
